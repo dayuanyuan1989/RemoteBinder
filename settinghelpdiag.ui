@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingHelpDiag</class>
+ <widget class="QWidget" name="SettingHelpDiag">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="setgrp">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>346</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#setgrp{
+	border: 0px;
+	background-color: rgb(228, 228, 228);
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>33</x>
+      <y>36</y>
+      <width>49</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Server:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="servercombox">
+    <property name="geometry">
+     <rect>
+      <x>109</x>
+      <y>33</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    border: 1px solid black;
+	font: 14pt &quot;Arial&quot;;
+}
+
+QComboBox::drop-down {
+	background-color: rgb(250, 250, 250);
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 14px;
+    border-left-width: 0px;
+    border-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-radius: 1px; /* same radius as the QComboBox */
+}
+
+QComboBox::down-arrow {
+	image: url(:/login/Resource/login_page/setarrow.png);
+}
+
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>test server1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>192.168.0.115</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="applybtn">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>90</y>
+      <width>256</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(141, 173, 192, 255), stop:0.6 rgba(164, 186, 200, 255), stop:1 rgba(206, 212, 216, 255));
+font: 75 11pt &quot;Arial&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Restablish the connection</string>
+    </property>
+   </widget>
+   <zorder>applybtn</zorder>
+   <zorder>label</zorder>
+   <zorder>servercombox</zorder>
+  </widget>
+  <widget class="QGroupBox" name="helpgrp">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>370</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#helpgrp{
+	border: 0px;
+	background-color: rgb(228, 228, 228);
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>23</y>
+      <width>205</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Touch gestures prompt</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="ongrp" native="true">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>24</y>
+      <width>64</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>62</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u173.png);
+font: 75 10pt &quot;Tahoma&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>   ON</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>6</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u175.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="offgrp" native="true">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>24</y>
+      <width>64</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>62</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u177.png);
+font: 75 10pt &quot;Tahoma&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       OFF</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>6</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u183.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>60</y>
+      <width>205</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Live View</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="ongrp_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>61</y>
+      <width>64</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>62</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u173.png);
+font: 75 10pt &quot;Tahoma&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>   ON</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>6</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u175.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="offgrp_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>61</y>
+      <width>64</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>62</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u177.png);
+font: 75 10pt &quot;Tahoma&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>       OFF</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>6</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u183.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

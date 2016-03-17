@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ItemModelEx</class>
+ <widget class="QWidget" name="ItemModelEx">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>116</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>730</width>
+     <height>116</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#background{
+	background-color: rgb(204, 204, 204);
+}</string>
+   </property>
+   <widget class="QLabel" name="icon">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>18</y>
+      <width>150</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>19</y>
+      <width>102</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Model11110</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>45</y>
+      <width>138</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>19</y>
+      <width>390</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar {
+   border: 0px solid grey;
+   border-radius: 5px;
+   background-color: rgb(204, 204, 204);
+}
+
+QProgressBar::chunk {
+	background-color: rgb(0, 83, 134);
+   width: 20px;
+}
+
+QProgressBar {
+   border: 0px solid grey;
+   border-radius: 5px;
+   text-align: center;
+	color: rgb(255, 255, 255);
+	font: 20pt &quot;Arial&quot;;
+}</string>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="format">
+     <string>Downloading  ....</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>19</y>
+      <width>390</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>247</x>
+       <y>12</y>
+       <width>143</width>
+       <height>58</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 83, 134);
+border: solid;
+color: rgb(255, 255, 255);
+font: 18pt &quot;Arial&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Download</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="statetext">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>29</y>
+       <width>79</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Downloaded</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>progressBar</zorder>
+   <zorder>widget</zorder>
+   <zorder>icon</zorder>
+   <zorder>text</zorder>
+   <zorder>label_3</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

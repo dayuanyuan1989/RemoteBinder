@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainPane</class>
+ <widget class="QWidget" name="MainPane">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;</string>
+   </property>
+   <widget class="QWidget" name="underbg" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="titlewidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#titlewidget{ 
+	border-image: url(:/configure/Resource/configure/u169.png);
+ }
+</string>
+     </property>
+     <widget class="QLabel" name="titlelabel">
+      <property name="geometry">
+       <rect>
+        <x>1585</x>
+        <y>14</y>
+        <width>194</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/configure/Resource/configure/u208.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitbtn">
+      <property name="geometry">
+       <rect>
+        <x>1824</x>
+        <y>8</y>
+        <width>56</width>
+        <height>56</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/login/Resource/login_page/u31.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="bodywidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>1920</width>
+       <height>1010</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QWidget" name="preivewpane" native="true">
+      <property name="geometry">
+       <rect>
+        <x>674</x>
+        <y>142</y>
+        <width>1245</width>
+        <height>868</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QLabel" name="previewboot">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>708</y>
+         <width>1245</width>
+         <height>160</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(55, 62, 67);
+border:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="grphelpbox">
+       <property name="geometry">
+        <rect>
+         <x>904</x>
+         <y>724</y>
+         <width>310</width>
+         <height>128</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:0px;</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>128</width>
+          <height>128</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/configure/Resource/configure/touch_rotate_1_u362.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>182</x>
+          <y>0</y>
+          <width>128</width>
+          <height>128</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/configure/Resource/configure/touch_zoom_1_u360.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="varsetpane" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>142</y>
+        <width>672</width>
+        <height>868</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="bodylabelswidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1920</width>
+        <height>1010</height>
+       </rect>
+      </property>
+      <widget class="QGroupBox" name="configurebodylabelsgrp">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1920</width>
+         <height>1010</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="blabel3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>850</y>
+          <width>1920</width>
+          <height>160</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(225, 225, 225);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blabel2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>142</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(225, 225, 225);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blabel1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1095</width>
+          <height>1010</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(225, 225, 225);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="plorebodylabelsgrp">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1920</width>
+         <height>1010</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="blabel1_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>674</width>
+          <height>1010</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(225, 225, 225);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blabel2_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>142</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(225, 225, 225);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blabel3_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>850</y>
+          <width>1920</width>
+          <height>160</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(225, 225, 225);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="varsetgrpbtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>42</y>
+        <width>1920</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(55, 62, 67);
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QWidget" name="varsettab" native="true">
+       <property name="geometry">
+        <rect>
+         <x>136</x>
+         <y>13</y>
+         <width>66</width>
+         <height>74</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>0</y>
+          <width>46</width>
+          <height>48</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/configure/Resource/configure/u98.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>58</y>
+          <width>66</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>VARIANTS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="animationtab" native="true">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>13</y>
+         <width>82</width>
+         <height>74</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>0</y>
+          <width>46</width>
+          <height>48</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/configure/Resource/configure/u98.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>58</y>
+          <width>82</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>ANIMATIONS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="surroundtab" native="true">
+       <property name="geometry">
+        <rect>
+         <x>422</x>
+         <y>13</y>
+         <width>97</width>
+         <height>74</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>24</x>
+          <y>0</y>
+          <width>46</width>
+          <height>48</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/configure/Resource/configure/u98.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>58</y>
+          <width>97</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SURROUNDING</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="sperator">
+      <property name="geometry">
+       <rect>
+        <x>673</x>
+        <y>42</y>
+        <width>1</width>
+        <height>973</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>bodylabelswidget</zorder>
+     <zorder>varsetpane</zorder>
+     <zorder>preivewpane</zorder>
+     <zorder>varsetgrpbtn</zorder>
+     <zorder>sperator</zorder>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>1920</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#widget{
+	background-color: rgba(177, 173, 163, 120);
+}</string>
+     </property>
+     <widget class="QGroupBox" name="modebtngrp">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>2</y>
+        <width>422</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: 0px;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="previewbtn">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>140</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/configure/Resource/configure/tab_option_2_u8.png);
+	font: 14pt &quot;Arial&quot;;
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/selected_tab_u13.png);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Preview</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="plorebtn">
+       <property name="geometry">
+        <rect>
+         <x>141</x>
+         <y>0</y>
+         <width>140</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/configure/Resource/configure/tab_option_2_u8.png);
+	font: 14pt &quot;Arial&quot;;
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/selected_tab_u13.png);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Plore</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="configurebtn">
+       <property name="geometry">
+        <rect>
+         <x>282</x>
+         <y>0</y>
+         <width>140</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/configure/Resource/configure/tab_option_2_u8.png);
+	font: 14pt &quot;Arial&quot;;
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/selected_tab_u13.png);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Configure</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="jobsbtngrp">
+      <property name="geometry">
+       <rect>
+        <x>24</x>
+        <y>5</y>
+        <width>242</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox#jobsgrpbtn{
+	border: 0px;
+	background-color: transparent;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="addbtn">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>180</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color:rgb(0, 0, 0);
+	font: 75 10pt &quot;Arial&quot;;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+	border-image: url(:/configure/Resource/configure/u256.png);
+}
+
+QPushButton:checked{
+	color:rgb(255, 255, 255);
+	border-image: url(:/configure/Resource/configure/u213.png);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>   ADD TO JOB LIST</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/configure/Resource/configure/u296.png</normaloff>
+         <activeon>:/configure/Resource/configure/u215.png</activeon>
+         <selectedon>:/configure/Resource/configure/u296.png</selectedon>:/configure/Resource/configure/u296.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="listbtn">
+       <property name="geometry">
+        <rect>
+         <x>182</x>
+         <y>0</y>
+         <width>60</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color:rgb(0, 0, 0);
+	font: 75 10pt &quot;Arial&quot;;
+	border-image: url(:/configure/Resource/configure/u256.png);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QPushButton:checked{
+	color:rgb(255, 255, 255);
+	border-image: url(:/configure/Resource/configure/u213.png);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>JOBS</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="modelselectbtn">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>7</y>
+        <width>280</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/configure/Resource/configure/u409.png);
+	font: 75 14pt &quot;Arial&quot;;
+}
+
+QPushButton:hover{
+	border-image: url(:/configure/Resource/configure/u409_mouseOver.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>SWITCH MODEL</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/configure/Resource/configure/u316.png</normaloff>:/configure/Resource/configure/u316.png</iconset>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="connectbtn">
+      <property name="geometry">
+       <rect>
+        <x>1753</x>
+        <y>12</y>
+        <width>123</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+	border-radius: 4px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(243, 243, 243, 255), stop:0.166 rgba(244, 244, 244, 255), stop:0.333 rgba(246, 246, 246, 255), stop:0.5 rgba(248, 248, 248, 255), stop:0.666 rgba(246, 246, 246, 255), stop:0.833 rgba(244, 244, 244, 255), stop:1 rgba(243, 243, 243, 255));
+	font: 9pt &quot;Arial&quot;;
+}
+
+
+QPushButton:pressed {
+	border: 1px solid #8f8f91;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(222, 222, 222, 255), stop:0.166 rgba(224, 224, 224, 255), stop:0.333 rgba(226, 226, 226, 255), stop:0.5 rgba(228, 228,228, 255), stop:0.666 rgba(226, 226, 226, 255), stop:0.833 rgba(224, 224, 224, 255), stop:1 rgba(222, 222, 222, 255));
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Disconnect from DG</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="configuregrpbtn">
+      <property name="geometry">
+       <rect>
+        <x>1550</x>
+        <y>14</y>
+        <width>173</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;
+border: 0px;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="setbtn">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>98</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 14pt &quot;Arial&quot;;
+	text-decoration: underline;
+	color: rgb(0, 83, 134);
+	border: 0px;	
+	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/menu_item_1_u194_selected.png);
+	color: rgb(255, 255, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Settings</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="helpbtn">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>0</y>
+         <width>75</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 14pt &quot;Arial&quot;;
+	text-decoration: underline;
+	color: rgb(0, 83, 134);
+	border: 0px;	
+	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/menu_item_2_u196_selected.png);
+	color: rgb(255, 255, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Help</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

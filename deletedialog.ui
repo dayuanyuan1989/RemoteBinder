@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeleteDialog</class>
+ <widget class="QDialog" name="DeleteDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>703</width>
+     <height>353</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(174, 174, 174);</string>
+   </property>
+   <widget class="QLabel" name="contentlabel">
+    <property name="geometry">
+     <rect>
+      <x>107</x>
+      <y>84</y>
+      <width>480</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 30pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Confirm to delete sever? </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletepanedelBtn">
+    <property name="geometry">
+     <rect>
+      <x>247</x>
+      <y>197</y>
+      <width>150</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+	border-image: url(:/login/Resource/login_page/u54.png);
+	color: rgb(255, 255, 255);
+	font: 22pt &quot;Arial&quot;;
+}
+
+QPushButton:pressed {
+	border: 1px solid #8f8f91;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletepanecancelBtn">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>197</y>
+      <width>150</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+	border-image: url(:/login/Resource/login_page/u54.png);
+	color: rgb(255, 255, 255);
+	font: 22pt &quot;Arial&quot;;
+}
+
+QPushButton:pressed {
+	border: 1px solid #8f8f91;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

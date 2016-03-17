@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CoverCotrolPane</class>
+ <widget class="QWidget" name="CoverCotrolPane">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>1920</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget{
+	background-color: rgba(177, 173, 163, 120);
+}</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>2</y>
+       <width>422</width>
+       <height>37</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: 0px;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QPushButton" name="previewbtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>140</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/configure/Resource/configure/tab_option_2_u8.png);
+	font: 14pt &quot;Arial&quot;;
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/selected_tab_u13.png);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Preview</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="plorebtn">
+      <property name="geometry">
+       <rect>
+        <x>141</x>
+        <y>0</y>
+        <width>140</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/configure/Resource/configure/tab_option_2_u8.png);
+	font: 14pt &quot;Arial&quot;;
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/selected_tab_u13.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Plore</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="configurebtn">
+      <property name="geometry">
+       <rect>
+        <x>282</x>
+        <y>0</y>
+        <width>140</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/configure/Resource/configure/tab_option_2_u8.png);
+	font: 14pt &quot;Arial&quot;;
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/selected_tab_u13.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Configure</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="jobsgrpbtn">
+     <property name="geometry">
+      <rect>
+       <x>24</x>
+       <y>5</y>
+       <width>242</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox#jobsgrpbtn{
+	border: 0px;
+	background-color: transparent;
+}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPushButton" name="addbtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>180</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color:rgb(0, 0, 0);
+	font: 75 10pt &quot;Arial&quot;;
+	border-image: url(:/configure/Resource/configure/u261.png);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QPushButton:checked{
+	color:rgb(255, 255, 255);
+	border-image: url(:/configure/Resource/configure/u218.png);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>   ADD TO JOB LIST</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/configure/Resource/configure/u301.png</normalon>
+        <selectedon>:/configure/Resource/configure/u220.png</selectedon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="listbtn">
+      <property name="geometry">
+       <rect>
+        <x>182</x>
+        <y>0</y>
+        <width>60</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color:rgb(0, 0, 0);
+	font: 75 10pt &quot;Arial&quot;;
+	border-image: url(:/configure/Resource/configure/u261.png);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QPushButton:checked{
+	color:rgb(255, 255, 255);
+	border-image: url(:/configure/Resource/configure/u218.png);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>JOBS</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="modelselectbtn">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>5</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/configure/Resource/configure/u314.png);
+font: 10pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>MODEL SELECTION          </string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/configure/Resource/configure/u316.png</normaloff>:/configure/Resource/configure/u316.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="serverlabel">
+     <property name="geometry">
+      <rect>
+       <x>1140</x>
+       <y>8</y>
+       <width>71</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;
+font: 75 14pt &quot;Arial&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Server :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="serveredit">
+     <property name="geometry">
+      <rect>
+       <x>1211</x>
+       <y>8</y>
+       <width>249</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(250, 250, 250);
+font: 14pt &quot;Arial&quot;;
+color: rgb(147, 147, 147);</string>
+     </property>
+     <property name="text">
+      <string>Test DG Server</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="connectbtn">
+     <property name="geometry">
+      <rect>
+       <x>1486</x>
+       <y>4</y>
+       <width>130</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 13pt &quot;Arial&quot;;
+background-color: rgba(177, 173, 163, 120);
+</string>
+     </property>
+     <property name="text">
+      <string>DisConnect</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="configuregrpbtm">
+     <property name="geometry">
+      <rect>
+       <x>1703</x>
+       <y>4</y>
+       <width>182</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;
+border: 0px;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPushButton" name="setbtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 14pt &quot;Arial&quot;;
+	text-decoration: underline;
+	color: rgb(0, 83, 134);
+	border: 0px;	
+	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/menu_item_1_u197_selected.png);
+	color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Settings</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="helpbtn">
+      <property name="geometry">
+       <rect>
+        <x>101</x>
+        <y>0</y>
+        <width>77</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 14pt &quot;Arial&quot;;
+	text-decoration: underline;
+	color: rgb(0, 83, 134);
+	border: 0px;	
+	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	border-image: url(:/configure/Resource/configure/menu_item_2_u199_selected.png);
+	color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Help</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

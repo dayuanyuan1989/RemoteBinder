@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddJobDiag</class>
+ <widget class="QWidget" name="AddJobDiag">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>814</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#background {
+	background-color: rgb(117, 117, 117);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>280</width>
+     <height>814</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#background {
+	background-color: rgb(117, 117, 117);
+}
+</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>32</y>
+      <width>39</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/configure/Resource/configure/u220.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>93</x>
+      <y>36</y>
+      <width>156</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	font: 13pt &quot;Arial&quot;;
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>1280 × 720</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1280 × 960</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1920 × 1080</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1920 × 1200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2048 × 1748</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2560 × 1600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3840 × 2160</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4960 × 2790</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4960 × 3508</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7680 × 4320</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7680 × 4800</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>118</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>FILE FORMAT</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="formatbtngrp">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>132</y>
+      <width>240</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#formatebtngrp {
+	border: 0px;
+	
+	background-color: rgb(117, 117, 117);
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="jpgBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>81</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	margin: -0px;
+	font: 10pt &quot;Arial&quot;;
+	color: rgb(0, 0, 0);
+	border-image: url(:/configure/Resource/configure/u229.png);
+}
+
+QPushButton:checked{	
+	border-image: url(:/configure/Resource/configure/u225.png);
+	color: rgb(255, 255, 255);
+	border: 1px solid lightgray;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>JPG</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="tifBtn">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>0</y>
+       <width>81</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	margin: -0px;
+	font: 10pt &quot;Arial&quot;;
+	color: rgb(0, 0, 0);
+	border-image: url(:/configure/Resource/configure/u229.png);
+}
+
+QPushButton:checked{	
+	border-image: url(:/configure/Resource/configure/u225.png);
+	color: rgb(255, 255, 255);
+	border: 1px solid lightgray;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>TIF</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pngBtn">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>0</y>
+       <width>80</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	margin: -0px;
+	font: 10pt &quot;Arial&quot;;
+	color: rgb(0, 0, 0);
+	border-image: url(:/configure/Resource/configure/u229.png);
+}
+
+QPushButton:checked{	
+	border-image: url(:/configure/Resource/configure/u225.png);
+	color: rgb(255, 255, 255);
+	border: 1px solid lightgray;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>PNG</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QCheckBox" name="hidesuroundingchkbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>194</y>
+      <width>216</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>HIDE SURROUNDING</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>244</y>
+      <width>158</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>RENDER QUALITY</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="quailitybtngrp">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>272</y>
+      <width>240</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#formatebtngrp {
+	border: 0px;
+	
+	background-color: rgb(117, 117, 117);
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="mediumBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>78</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	margin: -0px;
+	font: 10pt &quot;Arial&quot;;
+	color: rgb(0, 0, 0);
+	border-image: url(:/configure/Resource/configure/u229.png);
+}
+
+QPushButton:checked{	
+	border-image: url(:/configure/Resource/configure/u225.png);
+	color: rgb(255, 255, 255);
+	border: 1px solid lightgray;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>MEDIUM</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="highBtn">
+     <property name="geometry">
+      <rect>
+       <x>77</x>
+       <y>0</y>
+       <width>68</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	margin: -0px;
+	font: 10pt &quot;Arial&quot;;
+	color: rgb(0, 0, 0);
+	border-image: url(:/configure/Resource/configure/u229.png);
+}
+
+QPushButton:checked{	
+	border-image: url(:/configure/Resource/configure/u225.png);
+	color: rgb(255, 255, 255);
+	border: 1px solid lightgray;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>HIGH</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="veryHighBtn">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>0</y>
+       <width>108</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	margin: -0px;
+	font: 10pt &quot;Arial&quot;;
+	color: rgb(0, 0, 0);
+	border-image: url(:/configure/Resource/configure/u229.png);
+}
+
+QPushButton:checked{	
+	border-image: url(:/configure/Resource/configure/u225.png);
+	color: rgb(255, 255, 255);
+	border: 1px solid lightgray;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>VERY HIGH</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>314</y>
+      <width>55</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Open GL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>314</y>
+      <width>66</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Real Trace</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>158</x>
+      <y>314</y>
+      <width>112</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Global illumination</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>366</y>
+      <width>120</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>WATER MARK</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="watermarkchkbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>406</y>
+      <width>120</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Enable Water Mark</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="fontwidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>445</y>
+      <width>250</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="fontheadwidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#fontheadwidget{
+	border-image: url(:/configure/Resource/configure/u295.png);
+}</string>
+     </property>
+     <widget class="QComboBox" name="fontsizecombox">
+      <property name="geometry">
+       <rect>
+        <x>87</x>
+        <y>5</y>
+        <width>40</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>36</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="fontboldbtn">
+      <property name="geometry">
+       <rect>
+        <x>129</x>
+        <y>6</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border:0px;
+	font: 75 12pt &quot;Georgia&quot;;
+}
+
+QPushButton:checked{
+	border:1px solid blue;
+	background-color: rgb(230, 240, 250);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>B</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fontitalicbtn">
+      <property name="geometry">
+       <rect>
+        <x>149</x>
+        <y>6</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border:0px;
+	font: italic 75 12pt &quot;Georgia&quot;;
+}
+
+QPushButton:checked{
+	border:1px solid blue;
+	background-color: rgb(230, 240, 250);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>I</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fontupperbtn">
+      <property name="geometry">
+       <rect>
+        <x>149</x>
+        <y>6</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border:0px;
+	font: 75 12pt &quot;Georgia&quot;;
+}
+
+QPushButton:checked{
+	border:1px solid blue;
+	background-color: rgb(230, 240, 250);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/configure/Resource/configure/text_size_icon_u267.png</normaloff>:/configure/Resource/configure/text_size_icon_u267.png</iconset>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="colorlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>198</x>
+        <y>6</y>
+        <width>49</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>#000000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="colorbglabel">
+      <property name="geometry">
+       <rect>
+        <x>176</x>
+        <y>6</y>
+        <width>16</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="colorlabel">
+      <property name="geometry">
+       <rect>
+        <x>174</x>
+        <y>4</y>
+        <width>20</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFontComboBox" name="fontComboBox">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>5</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>colorlabel</zorder>
+     <zorder>fontboldbtn</zorder>
+     <zorder>fontupperbtn</zorder>
+     <zorder>colorlineEdit</zorder>
+     <zorder>colorbglabel</zorder>
+     <zorder>fontitalicbtn</zorder>
+     <zorder>fontComboBox</zorder>
+     <zorder>fontsizecombox</zorder>
+    </widget>
+    <widget class="QPlainTextEdit" name="textedit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>250</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;Arial&quot;;</string>
+     </property>
+     <property name="plainText">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="addTaskBtn">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>679</y>
+      <width>215</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/configure/Resource/configure/u284.png);
+color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;Arial&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>     ADD TO JOB LIST    </string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/configure/Resource/configure/u291.png</normaloff>:/configure/Resource/configure/u291.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

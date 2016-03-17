@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JobListDiag</class>
+ <widget class="QWidget" name="JobListDiag">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>814</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>280</width>
+     <height>814</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#background {
+	background-color: rgb(118, 118, 118);
+}</string>
+   </property>
+   <widget class="QWidget" name="bottomWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>734</y>
+      <width>280</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#bottomWidget{
+	background-color: rgb(240, 240, 240);
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+	border-radius: 14px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(243, 243, 243, 255), stop:0.166 rgba(244, 244, 244, 255), stop:0.333 rgba(246, 246, 246, 255), stop:0.5 rgba(248, 248, 248, 255), stop:0.666 rgba(246, 246, 246, 255), stop:0.833 rgba(244, 244, 244, 255), stop:1 rgba(243, 243, 243, 255));
+	
+	color: rgb(130, 119, 255);
+	border-color: rgb(130, 119, 255);
+	font: 12pt &quot;Arial&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Start Render</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

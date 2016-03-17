@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModelSelectionEx</class>
+ <widget class="QWidget" name="ModelSelectionEx">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>931</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="setpane" native="true">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>70</y>
+     <width>724</width>
+     <height>394</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#setpane{
+	background-color: rgb(204, 204, 204);
+	border:0px;
+}</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>55</y>
+      <width>49</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Label</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>121</y>
+      <width>137</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Server Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>189</y>
+      <width>74</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>PB User</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>253</y>
+      <width>89</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="titleedit">
+    <property name="geometry">
+     <rect>
+      <x>237</x>
+      <y>49</y>
+      <width>365</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="serveredit">
+    <property name="geometry">
+     <rect>
+      <x>237</x>
+      <y>115</y>
+      <width>286</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>561</x>
+      <y>121</y>
+      <width>38</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Port</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="portedit">
+    <property name="geometry">
+     <rect>
+      <x>609</x>
+      <y>115</y>
+      <width>67</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>11000</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="useredit">
+    <property name="geometry">
+     <rect>
+      <x>197</x>
+      <y>183</y>
+      <width>186</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>111</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordedit">
+    <property name="geometry">
+     <rect>
+      <x>197</x>
+      <y>247</y>
+      <width>186</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="testlogin">
+    <property name="geometry">
+     <rect>
+      <x>473</x>
+      <y>215</y>
+      <width>157</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+	background-color: rgb(125, 154, 172);
+    min-width: 80px;
+	font: 12pt &quot;MS Shell Dlg 2&quot;;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:pressed {
+	border: 1px solid #8f8f91;
+	background-color: rgb(117, 151, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>Test Login</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="submitBtn">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>326</y>
+      <width>118</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+	color: rgb(255, 255, 255);
+	border-image: url(:/configure/Resource/configure/u47.png);
+	font: 18pt &quot;Arial&quot;;
+}
+
+QPushButton:pressed {
+	border: 1px solid #8f8f91;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>SUBMIT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancelBtn">
+    <property name="geometry">
+     <rect>
+      <x>529</x>
+      <y>326</y>
+      <width>118</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+	color: rgb(255, 255, 255);
+	border-image: url(:/configure/Resource/configure/u47.png);
+	font: 18pt &quot;Arial&quot;;
+}
+
+QPushButton:pressed {
+	border: 1px solid #8f8f91;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="deletepane" native="true">
+   <property name="geometry">
+    <rect>
+     <x>359</x>
+     <y>72</y>
+     <width>410</width>
+     <height>210</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(208, 208, 208,200);</string>
+   </property>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>171</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Confirm to delete sever? </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletepanedelBtn">
+    <property name="geometry">
+     <rect>
+      <x>64</x>
+      <y>119</y>
+      <width>90</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(125, 154, 172, 255),  stop:0.8 rgba(185, 199, 208, 255), stop:1 rgba(228, 228, 228, 255));
+	color: rgb(255, 255, 255);
+	font: 11pt &quot;Arial&quot;;
+}
+
+QPushButton:pressed {
+	border: 1px solid #8f8f91;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(114, 141, 156, 255),  stop:0.8 rgba(185, 199, 208, 255), stop:1 rgba(228, 228, 228, 255));
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletepanecancelBtn">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>119</y>
+      <width>90</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid #8f8f91;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(125, 154, 172, 255),  stop:0.8 rgba(185, 199, 208, 255), stop:1 rgba(228, 228, 228, 255));
+	color: rgb(255, 255, 255);
+	font: 11pt &quot;Arial&quot;;
+}
+
+QPushButton:pressed {
+	border: 1px solid #8f8f91;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(114, 141, 156, 255),  stop:0.8 rgba(185, 199, 208, 255), stop:1 rgba(228, 228, 228, 255));
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="head" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#head{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(132, 158, 193, 255),  stop:0.8 rgba(185, 199, 208, 255), stop:1 rgba(228, 228, 228, 255));
+}
+</string>
+   </property>
+   <widget class="QPushButton" name="refreshBtn">
+    <property name="geometry">
+     <rect>
+      <x>433</x>
+      <y>0</y>
+      <width>97</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/configure/Resource/configure/u933.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/configure/Resource/configure/u1184.png</normaloff>:/configure/Resource/configure/u1184.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>38</width>
+      <height>38</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addBtn">
+    <property name="geometry">
+     <rect>
+      <x>523</x>
+      <y>0</y>
+      <width>97</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/configure/Resource/configure/u933.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/configure/Resource/configure/u1188.png</normaloff>:/configure/Resource/configure/u1188.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>37</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editbtn">
+    <property name="geometry">
+     <rect>
+      <x>613</x>
+      <y>0</y>
+      <width>97</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/configure/Resource/configure/u933.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/configure/Resource/configure/u1192.png</normaloff>:/configure/Resource/configure/u1192.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>42</width>
+      <height>49</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteBtn">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>0</y>
+      <width>97</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/configure/Resource/configure/u933.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/configure/Resource/configure/u935.png</normaloff>:/configure/Resource/configure/u935.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>48</width>
+      <height>49</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="headserver" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>440</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#headserver{
+	border-image: url(:/configure/Resource/configure/u937.png);
+}</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>119</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>PB Server</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>137</x>
+       <y>12</y>
+       <width>280</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QComboBox {
+    border: 1px solid black;
+	font: 18pt &quot;Arial&quot;;
+}
+
+QComboBox::drop-down {
+	background-color: rgb(250, 250, 250);
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 18px;
+    border-left-width: 0px;
+    border-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-radius: 2px; /* same radius as the QComboBox */
+}
+
+QComboBox::down-arrow {
+	image: url(:/login/Resource/login_page/modelpanearrow.png);
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>111111111</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>22222222</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>33333333</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>44444444</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="refreshingLabel">
+    <property name="geometry">
+     <rect>
+      <x>435</x>
+      <y>10</y>
+      <width>83</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/configure/Resource/configure/u426.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>refreshBtn</zorder>
+   <zorder>headserver</zorder>
+   <zorder>refreshingLabel</zorder>
+   <zorder>addBtn</zorder>
+   <zorder>editbtn</zorder>
+   <zorder>deleteBtn</zorder>
+  </widget>
+  <widget class="QWidget" name="modelpane" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>800</width>
+     <height>861</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#modelpane{	
+	background-color: rgb(228, 228, 228);
+}
+</string>
+   </property>
+  </widget>
+  <zorder>deletepane</zorder>
+  <zorder>head</zorder>
+  <zorder>modelpane</zorder>
+  <zorder>setpane</zorder>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
